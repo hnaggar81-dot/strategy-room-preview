@@ -18,32 +18,32 @@
 
   <main id="top">
     <section class="hero section" data-screen="landing">
-      <div class="eyebrow">FREE FOUNDING PREVIEW</div>
-      <h1>عندك خطط وأهداف.<br><span>بس هل عندك استراتيجية واضحة؟</span></h1>
-      <p class="hero-copy">وجود targets وbudgets ومبادرات مش معناه بالضرورة إن اختيارات الشركة واضحة، مترابطة، وقابلة للتنفيذ.</p>
+      <div class="eyebrow">FREE MINI STRATEGY DIAGNOSTIC</div>
+      <h1>ابنِ الصورة الاستراتيجية.<br><span>قبل ما تختار الخطة.</span></h1>
+      <p class="hero-copy">تجربة مصغّرة تمر على الشركة والسوق والمنافسة والقدرات، ثم تحوّل الإجابات إلى تشخيص استراتيجي أولي.</p>
       <div class="problem-strip" aria-label="Common strategy problems">
         <span>Fragmentation</span><span>Context Gaps</span><span>Weak Choices</span><span>Misalignment</span><span>Execution Gap</span>
       </div>
-      <p class="solution-line"><strong>The Strategy Room</strong> تجربة منظمة تساعدك تفهم وضع الشركة، تختبر وضوح اختياراتها، وتشوف إيه اللي محتاج تحليل أعمق.</p>
+      <p class="solution-line"><strong>The Strategy Room</strong> نموذج مصغر من عملية تطوير الاستراتيجية: Business Context، Environment، Market، Competition، Capabilities، ثم Strategic Synthesis.</p>
       <div class="hero-actions">
-        <button class="primary-button" data-action="begin">ابدأ التجربة المجانية</button>
-        <button class="secondary-button" data-action="sample">جرّب بشركة افتراضية</button>
+        <button class="primary-button" data-action="begin">ابدأ التشخيص المصغّر</button>
+        <button class="secondary-button" data-action="sample">شاهد Case افتراضية</button>
       </div>
       <div class="trust-row"><span>✓ من غير دفع</span><span>✓ من غير Account</span><span>✓ من غير بيانات حساسة</span><span>✓ حوالي 10 دقائق</span></div>
     </section>
 
     <section class="section compact-section" aria-labelledby="what-test">
       <div class="section-heading">
-        <div class="eyebrow">WHAT YOU WILL TEST</div>
-        <h2 id="what-test">ست إشارات تكشف قوة التفكير الاستراتيجي</h2>
+        <div class="eyebrow">WHAT THE DIAGNOSTIC COVERS</div>
+        <h2 id="what-test">ست زوايا تبني صورة الشركة الاستراتيجية</h2>
       </div>
       <div class="dimension-grid">
-        <article><b>Clarity</b><p>هل الاتجاه مفهوم ومحدد؟</p></article>
-        <article><b>Focus</b><p>هل الاختيارات والأولويات واضحة؟</p></article>
-        <article><b>Market Understanding</b><p>هل القرار مبني على فهم للسوق والعملاء؟</p></article>
-        <article><b>Readiness</b><p>هل القدرات والموارد مناسبة للطموح؟</p></article>
-        <article><b>Fit</b><p>هل الاختيارات والمبادرات بتدعم بعضها؟</p></article>
-        <article><b>Action</b><p>هل يمكن تحويل الاتجاه إلى تنفيذ وقياس؟</p></article>
+        <article><b>Business Context</b><p>الحجم، نموذج الإيراد، العملاء والتحدي الأساسي.</p></article>
+        <article><b>Strategic Environment</b><p>التوقع، القدرة على التأثير، وضغط البقاء.</p></article>
+        <article><b>Market & Customers</b><p>النمو، التركّز، القوة التفاوضية والتغير.</p></article>
+        <article><b>Competition</b><p>حدة المنافسة، البدائل، ومصدر التميز.</p></article>
+        <article><b>Capabilities</b><p>الموارد والقدرات والفجوات الداخلية.</p></article>
+        <article><b>Strategic Choices</b><p>Where to Play، How to Win والـtrade-offs.</p></article>
       </div>
     </section>
 
@@ -99,22 +99,27 @@
       <div class="step-label">الخطوة 4 من 4</div>
       <div class="results-hero">
         <div>
-          <div class="eyebrow">YOUR STRATEGY CLARITY PREVIEW</div>
-          <h2>الصورة الأولية جاهزة</h2>
-          <p>دي قراءة تجريبية مبنية على إجاباتك، وليست توصية استراتيجية نهائية.</p>
+          <div class="eyebrow">YOUR MINI STRATEGY DIAGNOSTIC</div>
+          <h2>التشخيص الاستراتيجي الأولي</h2>
+          <p id="contextSummary">قراءة مصغّرة مبنية على إجاباتك، وليست بديلًا عن التحليل الكامل أو قرار الإدارة.</p>
         </div>
-        <div class="overall-score"><span id="overallScore">—</span><small>Overall clarity</small></div>
+        <div class="approach-badge"><small>Suggested approach</small><strong id="strategyApproach">—</strong></div>
       </div>
-      <div class="score-grid" id="scoreGrid"></div>
+      <div class="approach-explanation" id="approachExplanation"></div>
       <div class="results-columns">
         <div class="result-panel">
-          <h3>إشارات إيجابية</h3>
-          <div id="strengthFindings"></div>
+          <h3>External Signals</h3>
+          <div id="externalFindings"></div>
         </div>
         <div class="result-panel alert-panel">
-          <h3>أسئلة محتاجة قرار</h3>
-          <div id="gapFindings"></div>
+          <h3>Internal Diagnosis</h3>
+          <div id="internalFindings"></div>
         </div>
+      </div>
+      <div class="result-panel swot-panel"><h3>Preliminary SWOT by Strategic Domain</h3><div class="swot-grid" id="swotGrid"></div></div>
+      <div class="results-columns">
+        <div class="result-panel"><h3>Top Strategic Issues</h3><div id="strategicIssues"></div></div>
+        <div class="result-panel"><h3>Evidence Gaps</h3><div id="evidenceGaps"></div></div>
       </div>
       <div class="next-step-card">
         <div><span>FOUNDING ACCESS</span><h3>عايز تشوف النسخة الأعمق؟</h3><p>سجّل اهتمامك بالـpilot الكامل، من غير دفع أو التزام. المشاركون الأوائل يحصلون على أولوية وFounding Client benefit.</p></div>
