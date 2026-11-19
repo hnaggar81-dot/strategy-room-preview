@@ -1,186 +1,25 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="تجربة مجانية تساعد الإدارة تختبر وضوح وترابط استراتيجيتها، من غير مشاركة بيانات حساسة.">
-  <title>The Strategy Room | Strategy Clarity Check</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, structured strategy diagnostic for leadership teams.">
+  <title>The Strategy Room | Mini Strategy Diagnostic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="The Strategy Room home">
-      <span class="brand-mark">SR</span>
-      <span><b>The Strategy Room</b><small>Clear choices. Connected action.</small></span>
-    </a>
-    <button class="text-button" id="privacyOpen">الخصوصية</button>
-  </header>
-
+  <header class="site-header"><a class="brand" href="#top" aria-label="The Strategy Room home"><span class="brand-mark">SR</span><span><b>The Strategy Room</b><small>Structured thinking. Stronger choices.</small></span></a><div class="header-actions"><span class="prototype-chip">Private preview</span><button class="text-button" id="privacyOpen">Privacy</button></div></header>
   <main id="top">
-    <section class="hero section" data-screen="landing">
-      <div class="eyebrow">FREE MINI STRATEGY DIAGNOSTIC</div>
-      <h1>ابنِ الصورة الاستراتيجية.<br><span>قبل ما تختار الخطة.</span></h1>
-      <p class="hero-copy">تجربة مصغّرة تمر على الشركة والسوق والمنافسة والقدرات، ثم تحوّل الإجابات إلى تشخيص استراتيجي أولي.</p>
-      <div class="problem-strip" aria-label="Common strategy problems">
-        <span>Fragmentation</span><span>Context Gaps</span><span>Weak Choices</span><span>Misalignment</span><span>Execution Gap</span>
-      </div>
-      <p class="solution-line"><strong>The Strategy Room</strong> نموذج مصغر من عملية تطوير الاستراتيجية: Business Context، Environment، Market، Competition، Capabilities، ثم Strategic Synthesis.</p>
-      <div class="hero-actions">
-        <button class="primary-button" data-action="begin">ابدأ التشخيص المصغّر</button>
-        <button class="secondary-button" data-action="sample">شاهد Case افتراضية</button>
-      </div>
-      <div class="trust-row"><span>✓ من غير دفع</span><span>✓ من غير Account</span><span>✓ من غير بيانات حساسة</span><span>✓ حوالي 10 دقائق</span></div>
-    </section>
-
-    <section class="section compact-section" aria-labelledby="what-test">
-      <div class="section-heading">
-        <div class="eyebrow">WHAT THE DIAGNOSTIC COVERS</div>
-        <h2 id="what-test">ست زوايا تبني صورة الشركة الاستراتيجية</h2>
-      </div>
-      <div class="dimension-grid">
-        <article><b>Business Context</b><p>الحجم، نموذج الإيراد، العملاء والتحدي الأساسي.</p></article>
-        <article><b>Strategic Environment</b><p>التوقع، القدرة على التأثير، وضغط البقاء.</p></article>
-        <article><b>Market & Customers</b><p>النمو، التركّز، القوة التفاوضية والتغير.</p></article>
-        <article><b>Competition</b><p>حدة المنافسة، البدائل، ومصدر التميز.</p></article>
-        <article><b>Capabilities</b><p>الموارد والقدرات والفجوات الداخلية.</p></article>
-        <article><b>Strategic Choices</b><p>Where to Play، How to Win والـtrade-offs.</p></article>
-      </div>
-    </section>
-
-    <section class="section path-section" id="paths" hidden>
-      <div class="step-label">الخطوة 1 من 4</div>
-      <h2>تحب تبدأ منين؟</h2>
-      <div class="path-grid">
-        <button class="path-card" data-path="build">
-          <span class="path-number">01</span>
-          <b>Build Your Strategy</b>
-          <p>ابدأ من Business Context، وحدد الاتجاه والاختيارات والقدرات المطلوبة.</p>
-          <em>أبني استراتيجية من الصفر ←</em>
-        </button>
-        <button class="path-card" data-path="challenge">
-          <span class="path-number">02</span>
-          <b>Challenge Your Business Plan</b>
-          <p>اختبر منطق خطة موجودة، واكشف الفجوات والتناقضات ومشاكل التنفيذ.</p>
-          <em>أراجع خطة موجودة ←</em>
-        </button>
-      </div>
-    </section>
-
-    <section class="section input-section" id="dataChoice" hidden>
-      <div class="step-label">الخطوة 2 من 4</div>
-      <h2>اختار مستوى البيانات المريح لك</h2>
-      <p class="section-intro">مش محتاج تدخل اسم الشركة أو أي معلومة سرية.</p>
-      <div class="choice-list">
-        <button data-data-mode="sample"><b>شركة افتراضية جاهزة</b><span>أسرع طريقة لتجربة الـtool</span></button>
-        <button data-data-mode="approximate"><b>بيانات تقريبية</b><span>استخدم ranges ووصف عام من غير تفاصيل حساسة</span></button>
-        <button data-data-mode="custom"><b>معلومات من اختيارك</b><span>حقيقية أو تخيلية—إنت صاحب القرار</span></button>
-      </div>
-    </section>
-
-    <section class="section assessment-section" id="assessment" hidden>
-      <div class="assessment-header">
-        <div>
-          <div class="step-label">الخطوة 3 من 4</div>
-          <h2 id="assessmentTitle">Strategy Clarity Check</h2>
-        </div>
-        <div class="progress-wrap"><span id="progressText">0%</span><div class="progress-track"><i id="progressBar"></i></div></div>
-      </div>
-      <form id="assessmentForm" novalidate>
-        <div id="questionHost"></div>
-        <div class="form-actions">
-          <button type="button" class="secondary-button" id="prevQuestion">السابق</button>
-          <button type="button" class="primary-button" id="nextQuestion">التالي</button>
-        </div>
-      </form>
-      <button class="help-fab" id="helpOpen" type="button"><span>?</span> سؤال أو ملاحظة</button>
-    </section>
-
-    <section class="section results-section" id="results" hidden>
-      <div class="step-label">الخطوة 4 من 4</div>
-      <div class="results-hero">
-        <div>
-          <div class="eyebrow">YOUR MINI STRATEGY DIAGNOSTIC</div>
-          <h2>التشخيص الاستراتيجي الأولي</h2>
-          <p id="contextSummary">قراءة مصغّرة مبنية على إجاباتك، وليست بديلًا عن التحليل الكامل أو قرار الإدارة.</p>
-        </div>
-        <div class="approach-badge"><small>Suggested approach</small><strong id="strategyApproach">—</strong></div>
-      </div>
-      <div class="approach-explanation" id="approachExplanation"></div>
-      <div class="results-columns">
-        <div class="result-panel">
-          <h3>External Signals</h3>
-          <div id="externalFindings"></div>
-        </div>
-        <div class="result-panel alert-panel">
-          <h3>Internal Diagnosis</h3>
-          <div id="internalFindings"></div>
-        </div>
-      </div>
-      <div class="result-panel swot-panel"><h3>Preliminary SWOT by Strategic Domain</h3><div class="swot-grid" id="swotGrid"></div></div>
-      <div class="results-columns">
-        <div class="result-panel"><h3>Top Strategic Issues</h3><div id="strategicIssues"></div></div>
-        <div class="result-panel"><h3>Evidence Gaps</h3><div id="evidenceGaps"></div></div>
-      </div>
-      <div class="next-step-card">
-        <div><span>FOUNDING ACCESS</span><h3>عايز تشوف النسخة الأعمق؟</h3><p>سجّل اهتمامك بالـpilot الكامل، من غير دفع أو التزام. المشاركون الأوائل يحصلون على أولوية وFounding Client benefit.</p></div>
-        <button class="primary-button" id="interestOpen">سجّل اهتمامك</button>
-      </div>
-      <div class="result-actions">
-        <button class="secondary-button" id="restart">ابدأ تجربة جديدة</button>
-        <button class="text-button" id="exportData">صدّر بيانات تجربتي</button>
-      </div>
-    </section>
+    <section class="hero section" data-screen="landing"><div class="hero-layout"><div class="hero-content"><div class="eyebrow"><i></i> FREE MINI STRATEGY DIAGNOSTIC</div><h1>See the strategic picture.<br><span>Before choosing the plan.</span></h1><p class="hero-copy">A focused management diagnostic across your business context, market, competition, capabilities and strategic choices.</p><div class="hero-actions"><button class="primary-button" data-action="begin">Start your diagnostic</button><button class="secondary-button" data-action="sample">Explore a sample case</button></div><div class="trust-row"><span>No payment</span><span>No account</span><span>No sensitive data required</span><span>About 10 minutes</span></div></div><aside class="diagnostic-preview" aria-label="Diagnostic output preview"><div class="preview-top"><span>STRATEGIC SNAPSHOT</span><span class="status-pill">Preview</span></div><div class="preview-score"><small>Suggested approach</small><strong>Adaptive</strong><p>Test, learn and scale what works.</p></div><div class="signal-grid"><div><small>Market</small><b>High change</b></div><div><small>Position</small><b>Needs focus</b></div><div><small>Capabilities</small><b>2 gaps</b></div><div><small>Choices</small><b>Partial</b></div></div><div class="preview-footer"><span></span><p>One connected view. Clearer next questions.</p></div></aside></div></section>
+    <section class="section compact-section" aria-labelledby="what-test"><div class="section-heading"><div><div class="eyebrow"><i></i> DIAGNOSTIC COVERAGE</div><h2 id="what-test">Six lenses. One connected view.</h2></div><p>Not another generic score. Each lens contributes evidence to a preliminary strategic diagnosis.</p></div><div class="dimension-grid"><article><span class="card-icon">01</span><b>Business Context</b><p>Business model, stage, ambition and immediate strategic challenge.</p></article><article><span class="card-icon">02</span><b>Strategic Environment</b><p>Predictability, ability to shape the market and survival pressure.</p></article><article><span class="card-icon">03</span><b>Market & Customers</b><p>Demand, profit pools, concentration and buyer power.</p></article><article><span class="card-icon">04</span><b>Competition</b><p>Rivalry, substitutes, imitation and sources of advantage.</p></article><article><span class="card-icon">05</span><b>Capabilities</b><p>Distinctive strengths, critical gaps and investment capacity.</p></article><article><span class="card-icon">06</span><b>Strategic Choices</b><p>Where to play, how to win and the trade-offs that create focus.</p></article></div></section>
+    <section class="section path-section" id="paths" hidden><div class="page-kicker">STEP 1 OF 4</div><h2>Choose your starting point</h2><p class="section-intro">Use a ready-made sample or work with information you are comfortable sharing.</p><div class="path-grid"><button class="path-card" data-path="build"><span class="path-icon">＋</span><b>Build Your Strategy</b><p>Connect business context, environment, market, capabilities and choices.</p><em>Start from scratch</em></button><button class="path-card" data-path="challenge"><span class="path-icon">✓</span><b>Challenge Your Business Plan</b><p>Stress-test a plan for gaps, contradictions, weak choices and execution risk.</p><em>Review an existing plan</em></button></div></section>
+    <section class="section input-section" id="dataChoice" hidden><div class="page-kicker">STEP 2 OF 4</div><h2>Choose your information level</h2><p class="section-intro">You do not need to provide a company name or confidential information.</p><div class="choice-list"><button data-data-mode="sample"><span class="choice-icon">S</span><span><b>Ready-made sample company</b><small>The fastest way to explore the experience.</small></span></button><button data-data-mode="approximate"><span class="choice-icon">≈</span><span><b>Approximate information</b><small>Use ranges and general descriptions.</small></span></button><button data-data-mode="custom"><span class="choice-icon">C</span><span><b>Your own information</b><small>Real or hypothetical—you decide.</small></span></button></div></section>
+    <section class="section assessment-section" id="assessment" hidden><div class="assessment-header"><div><div class="page-kicker">STEP 3 OF 4</div><h2 id="assessmentTitle">Mini Strategy Diagnostic</h2></div><div class="progress-wrap"><span id="progressText">0%</span><div class="progress-track"><i id="progressBar"></i></div></div></div><form id="assessmentForm" novalidate><div id="questionHost"></div><div class="form-actions"><button type="button" class="secondary-button" id="prevQuestion">Back</button><button type="button" class="primary-button" id="nextQuestion">Continue</button></div></form><button class="help-fab" id="helpOpen" type="button"><span>?</span> Help & feedback</button></section>
+    <section class="section results-section" id="results" hidden><div class="page-kicker">STEP 4 OF 4</div><div class="results-hero"><div><div class="eyebrow"><i></i> YOUR MINI STRATEGY DIAGNOSTIC</div><h2>Preliminary strategic diagnosis</h2><p id="contextSummary">A structured reading of your answers—not a substitute for full analysis or management judgement.</p></div><div class="approach-badge"><small>Suggested approach</small><strong id="strategyApproach">—</strong></div></div><div class="approach-explanation" id="approachExplanation"></div><div class="results-columns"><div class="result-panel"><div class="panel-heading"><span>01</span><h3>External Signals</h3></div><div id="externalFindings"></div></div><div class="result-panel alert-panel"><div class="panel-heading"><span>02</span><h3>Internal Diagnosis</h3></div><div id="internalFindings"></div></div></div><div class="result-panel swot-panel"><div class="panel-heading"><span>03</span><h3>Preliminary SWOT</h3></div><div class="swot-grid" id="swotGrid"></div></div><div class="results-columns"><div class="result-panel"><div class="panel-heading"><span>04</span><h3>Top Strategic Issues</h3></div><div id="strategicIssues"></div></div><div class="result-panel"><div class="panel-heading"><span>05</span><h3>Evidence Gaps</h3></div><div id="evidenceGaps"></div></div></div><div class="next-step-card"><div><span>FOUNDING PILOT</span><h3>Want to explore the deeper service?</h3><p>Register your interest in the full pilot. No payment or commitment required.</p></div><button class="primary-button" id="interestOpen">Register interest</button></div><div class="result-actions"><button class="secondary-button" id="restart">Start a new diagnostic</button><button class="text-button" id="exportData">Export my session</button></div></section>
   </main>
-
-  <aside class="modal" id="feedbackModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
-    <div class="modal-card">
-      <button class="modal-close" data-close="feedbackModal" aria-label="Close">×</button>
-      <div class="eyebrow">HELP & FEEDBACK</div>
-      <h2 id="feedbackTitle">إيه اللي محتاجه دلوقتي؟</h2>
-      <div class="feedback-types">
-        <button data-feedback="unclear">السؤال مش واضح</button>
-        <button data-feedback="no_data">مش عندي البيانات</button>
-        <button data-feedback="sensitive">المعلومة حساسة</button>
-        <button data-feedback="example">محتاج مثال</button>
-        <button data-feedback="technical">فيه مشكلة تقنية</button>
-        <button data-feedback="suggestion">عندي اقتراح</button>
-      </div>
-      <label class="field-label">اكتب تعليقك—اختياري<textarea id="feedbackText" rows="4" placeholder="قول لنا إيه اللي وقفك أو إيه اللي محتاج يتحسن"></textarea></label>
-      <button class="primary-button full-button" id="feedbackSubmit">احفظ الملاحظة</button>
-      <p class="microcopy">في نسخة الـvalidation، الملاحظة تُحفظ داخل متصفحك ويمكن تصديرها مع بيانات التجربة.</p>
-    </div>
-  </aside>
-
-  <aside class="modal" id="interestModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="interestTitle">
-    <div class="modal-card">
-      <button class="modal-close" data-close="interestModal" aria-label="Close">×</button>
-      <div class="eyebrow">FOUNDING PILOT</div>
-      <h2 id="interestTitle">إيه الخطوة اللي تهمك؟</h2>
-      <div class="interest-options">
-        <label><input type="radio" name="interest" value="full_build"><span><b>Build My Strategy</b>مهتم ببناء Strategy كاملة من الصفر</span></label>
-        <label><input type="radio" name="interest" value="plan_review"><span><b>Challenge My Business Plan</b>مهتم بمراجعة أو إعادة تصميم خطة موجودة</span></label>
-        <label><input type="radio" name="interest" value="updates"><span><b>Keep Me Updated</b>عايز أعرف لما الـpilot يبدأ</span></label>
-      </div>
-      <label class="field-label">البريد الإلكتروني—اختياري في النسخة المحلية<input id="interestEmail" type="email" placeholder="name@company.com"></label>
-      <label class="consent"><input id="foundingBenefit" type="checkbox"><span>أرغب في الحصول على أولوية وFounding Client benefit عند إطلاق الـpilot.</span></label>
-      <button class="primary-button full-button" id="interestSubmit">تسجيل الاهتمام</button>
-      <div class="success-message" id="interestSuccess" hidden>تم تسجيل اختيارك داخل التجربة. لن يتم إرسال أي بيانات في النسخة المحلية.</div>
-    </div>
-  </aside>
-
-  <aside class="modal" id="privacyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
-    <div class="modal-card">
-      <button class="modal-close" data-close="privacyModal" aria-label="Close">×</button>
-      <div class="eyebrow">PRIVACY BY CHOICE</div>
-      <h2 id="privacyTitle">بياناتك تحت سيطرتك</h2>
-      <p>النسخة الحالية لا ترسل إجاباتك إلى server. كل الإجابات والـevents محفوظة فقط في متصفحك باستخدام localStorage.</p>
-      <ul><li>تقدر تستخدم شركة افتراضية بالكامل.</li><li>لا نطلب اسم الشركة.</li><li>تقدر تصدّر بيانات التجربة بنفسك.</li><li>تقدر تمسح كل البيانات فورًا.</li></ul>
-      <button class="danger-button full-button" id="eraseData">مسح كل بيانات التجربة</button>
-    </div>
-  </aside>
-
-  <footer><b>The Strategy Room</b><span>Zero-cost validation prototype · No paid AI · No sensitive data required</span></footer>
-  <script src="config.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+  <aside class="modal" id="feedbackModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle"><div class="modal-card"><button class="modal-close" data-close="feedbackModal" aria-label="Close">×</button><div class="eyebrow"><i></i> HELP & FEEDBACK</div><h2 id="feedbackTitle">What do you need?</h2><div class="feedback-types"><button data-feedback="unclear">Question is unclear</button><button data-feedback="no_data">I do not have the data</button><button data-feedback="sensitive">Information is sensitive</button><button data-feedback="example">I need an example</button><button data-feedback="technical">Technical issue</button><button data-feedback="suggestion">I have a suggestion</button></div><label class="field-label">Comment—optional<textarea id="feedbackText" rows="4" placeholder="Tell us what stopped you or what should improve"></textarea></label><button class="primary-button full-button" id="feedbackSubmit">Save feedback</button><p class="microcopy">Feedback remains in this browser and can be exported with your session.</p></div></aside>
+  <aside class="modal" id="interestModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="interestTitle"><div class="modal-card"><button class="modal-close" data-close="interestModal" aria-label="Close">×</button><div class="eyebrow"><i></i> FOUNDING PILOT</div><h2 id="interestTitle">Which service interests you?</h2><div class="interest-options"><label><input type="radio" name="interest" value="full_build"><span><b>Build My Strategy</b>Develop a complete strategy from the ground up.</span></label><label><input type="radio" name="interest" value="plan_review"><span><b>Challenge My Business Plan</b>Review or redesign an existing plan.</span></label><label><input type="radio" name="interest" value="updates"><span><b>Keep Me Updated</b>Notify me when the pilot opens.</span></label></div><label class="field-label">Email—optional in this preview<input id="interestEmail" type="email" placeholder="name@company.com"></label><label class="consent"><input id="foundingBenefit" type="checkbox"><span>I would like priority access and a founding-client benefit when the pilot launches.</span></label><button class="primary-button full-button" id="interestSubmit">Register interest</button><div class="success-message" id="interestSuccess" hidden>Your choice was saved in this browser. No data is sent in this preview.</div></div></aside>
+  <aside class="modal" id="privacyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacyTitle"><div class="modal-card"><button class="modal-close" data-close="privacyModal" aria-label="Close">×</button><div class="eyebrow"><i></i> PRIVACY BY CHOICE</div><h2 id="privacyTitle">Your information stays under your control</h2><p>This preview does not send your answers to a server. Answers and events remain in this browser using local storage.</p><ul><li>Use a completely hypothetical company.</li><li>No company name is required.</li><li>Export your session whenever you choose.</li><li>Erase all local data instantly.</li></ul><button class="danger-button full-button" id="eraseData">Erase all session data</button></div></aside>
+  <footer><b>The Strategy Room</b><span>Validation prototype · No paid AI · No sensitive data required</span></footer><script src="config.js"></script><script src="app.js"></script>
+</body></html>
