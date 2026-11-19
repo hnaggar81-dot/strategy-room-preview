@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تجربة مجانية تساعد الإدارة تختبر وضوح وترابط استراتيجيتها، من غير مشاركة بيانات حساسة.">
+  <title>The Strategy Room | Strategy Clarity Check</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="The Strategy Room home">
+      <span class="brand-mark">SR</span>
+      <span><b>The Strategy Room</b><small>Clear choices. Connected action.</small></span>
+    </a>
+    <button class="text-button" id="privacyOpen">الخصوصية</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section" data-screen="landing">
+      <div class="eyebrow">FREE FOUNDING PREVIEW</div>
+      <h1>عندك خطط وأهداف.<br><span>بس هل عندك استراتيجية واضحة؟</span></h1>
+      <p class="hero-copy">وجود targets وbudgets ومبادرات مش معناه بالضرورة إن اختيارات الشركة واضحة، مترابطة، وقابلة للتنفيذ.</p>
+      <div class="problem-strip" aria-label="Common strategy problems">
+        <span>Fragmentation</span><span>Context Gaps</span><span>Weak Choices</span><span>Misalignment</span><span>Execution Gap</span>
+      </div>
+      <p class="solution-line"><strong>The Strategy Room</strong> تجربة منظمة تساعدك تفهم وضع الشركة، تختبر وضوح اختياراتها، وتشوف إيه اللي محتاج تحليل أعمق.</p>
+      <div class="hero-actions">
+        <button class="primary-button" data-action="begin">ابدأ التجربة المجانية</button>
+        <button class="secondary-button" data-action="sample">جرّب بشركة افتراضية</button>
+      </div>
+      <div class="trust-row"><span>✓ من غير دفع</span><span>✓ من غير Account</span><span>✓ من غير بيانات حساسة</span><span>✓ حوالي 10 دقائق</span></div>
+    </section>
+
+    <section class="section compact-section" aria-labelledby="what-test">
+      <div class="section-heading">
+        <div class="eyebrow">WHAT YOU WILL TEST</div>
+        <h2 id="what-test">ست إشارات تكشف قوة التفكير الاستراتيجي</h2>
+      </div>
+      <div class="dimension-grid">
+        <article><b>Clarity</b><p>هل الاتجاه مفهوم ومحدد؟</p></article>
+        <article><b>Focus</b><p>هل الاختيارات والأولويات واضحة؟</p></article>
+        <article><b>Market Understanding</b><p>هل القرار مبني على فهم للسوق والعملاء؟</p></article>
+        <article><b>Readiness</b><p>هل القدرات والموارد مناسبة للطموح؟</p></article>
+        <article><b>Fit</b><p>هل الاختيارات والمبادرات بتدعم بعضها؟</p></article>
+        <article><b>Action</b><p>هل يمكن تحويل الاتجاه إلى تنفيذ وقياس؟</p></article>
+      </div>
+    </section>
+
+    <section class="section path-section" id="paths" hidden>
+      <div class="step-label">الخطوة 1 من 4</div>
+      <h2>تحب تبدأ منين؟</h2>
+      <div class="path-grid">
+        <button class="path-card" data-path="build">
+          <span class="path-number">01</span>
+          <b>Build Your Strategy</b>
+          <p>ابدأ من Business Context، وحدد الاتجاه والاختيارات والقدرات المطلوبة.</p>
+          <em>أبني استراتيجية من الصفر ←</em>
+        </button>
+        <button class="path-card" data-path="challenge">
+          <span class="path-number">02</span>
+          <b>Challenge Your Business Plan</b>
+          <p>اختبر منطق خطة موجودة، واكشف الفجوات والتناقضات ومشاكل التنفيذ.</p>
+          <em>أراجع خطة موجودة ←</em>
+        </button>
+      </div>
+    </section>
+
+    <section class="section input-section" id="dataChoice" hidden>
+      <div class="step-label">الخطوة 2 من 4</div>
+      <h2>اختار مستوى البيانات المريح لك</h2>
+      <p class="section-intro">مش محتاج تدخل اسم الشركة أو أي معلومة سرية.</p>
+      <div class="choice-list">
+        <button data-data-mode="sample"><b>شركة افتراضية جاهزة</b><span>أسرع طريقة لتجربة الـtool</span></button>
+        <button data-data-mode="approximate"><b>بيانات تقريبية</b><span>استخدم ranges ووصف عام من غير تفاصيل حساسة</span></button>
+        <button data-data-mode="custom"><b>معلومات من اختيارك</b><span>حقيقية أو تخيلية—إنت صاحب القرار</span></button>
+      </div>
+    </section>
+
+    <section class="section assessment-section" id="assessment" hidden>
+      <div class="assessment-header">
+        <div>
+          <div class="step-label">الخطوة 3 من 4</div>
+          <h2 id="assessmentTitle">Strategy Clarity Check</h2>
+        </div>
+        <div class="progress-wrap"><span id="progressText">0%</span><div class="progress-track"><i id="progressBar"></i></div></div>
+      </div>
+      <form id="assessmentForm" novalidate>
+        <div id="questionHost"></div>
+        <div class="form-actions">
+          <button type="button" class="secondary-button" id="prevQuestion">السابق</button>
+          <button type="button" class="primary-button" id="nextQuestion">التالي</button>
+        </div>
+      </form>
+      <button class="help-fab" id="helpOpen" type="button"><span>?</span> سؤال أو ملاحظة</button>
+    </section>
+
+    <section class="section results-section" id="results" hidden>
+      <div class="step-label">الخطوة 4 من 4</div>
+      <div class="results-hero">
+        <div>
+          <div class="eyebrow">YOUR STRATEGY CLARITY PREVIEW</div>
+          <h2>الصورة الأولية جاهزة</h2>
+          <p>دي قراءة تجريبية مبنية على إجاباتك، وليست توصية استراتيجية نهائية.</p>
+        </div>
+        <div class="overall-score"><span id="overallScore">—</span><small>Overall clarity</small></div>
+      </div>
+      <div class="score-grid" id="scoreGrid"></div>
+      <div class="results-columns">
+        <div class="result-panel">
+          <h3>إشارات إيجابية</h3>
+          <div id="strengthFindings"></div>
+        </div>
+        <div class="result-panel alert-panel">
+          <h3>أسئلة محتاجة قرار</h3>
+          <div id="gapFindings"></div>
+        </div>
+      </div>
+      <div class="next-step-card">
+        <div><span>FOUNDING ACCESS</span><h3>عايز تشوف النسخة الأعمق؟</h3><p>سجّل اهتمامك بالـpilot الكامل، من غير دفع أو التزام. المشاركون الأوائل يحصلون على أولوية وFounding Client benefit.</p></div>
+        <button class="primary-button" id="interestOpen">سجّل اهتمامك</button>
+      </div>
+      <div class="result-actions">
+        <button class="secondary-button" id="restart">ابدأ تجربة جديدة</button>
+        <button class="text-button" id="exportData">صدّر بيانات تجربتي</button>
+      </div>
+    </section>
+  </main>
+
+  <aside class="modal" id="feedbackModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
+    <div class="modal-card">
+      <button class="modal-close" data-close="feedbackModal" aria-label="Close">×</button>
+      <div class="eyebrow">HELP & FEEDBACK</div>
+      <h2 id="feedbackTitle">إيه اللي محتاجه دلوقتي؟</h2>
+      <div class="feedback-types">
+        <button data-feedback="unclear">السؤال مش واضح</button>
+        <button data-feedback="no_data">مش عندي البيانات</button>
+        <button data-feedback="sensitive">المعلومة حساسة</button>
+        <button data-feedback="example">محتاج مثال</button>
+        <button data-feedback="technical">فيه مشكلة تقنية</button>
+        <button data-feedback="suggestion">عندي اقتراح</button>
+      </div>
+      <label class="field-label">اكتب تعليقك—اختياري<textarea id="feedbackText" rows="4" placeholder="قول لنا إيه اللي وقفك أو إيه اللي محتاج يتحسن"></textarea></label>
+      <button class="primary-button full-button" id="feedbackSubmit">احفظ الملاحظة</button>
+      <p class="microcopy">في نسخة الـvalidation، الملاحظة تُحفظ داخل متصفحك ويمكن تصديرها مع بيانات التجربة.</p>
+    </div>
+  </aside>
+
+  <aside class="modal" id="interestModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="interestTitle">
+    <div class="modal-card">
+      <button class="modal-close" data-close="interestModal" aria-label="Close">×</button>
+      <div class="eyebrow">FOUNDING PILOT</div>
+      <h2 id="interestTitle">إيه الخطوة اللي تهمك؟</h2>
+      <div class="interest-options">
+        <label><input type="radio" name="interest" value="full_build"><span><b>Build My Strategy</b>مهتم ببناء Strategy كاملة من الصفر</span></label>
+        <label><input type="radio" name="interest" value="plan_review"><span><b>Challenge My Business Plan</b>مهتم بمراجعة أو إعادة تصميم خطة موجودة</span></label>
+        <label><input type="radio" name="interest" value="updates"><span><b>Keep Me Updated</b>عايز أعرف لما الـpilot يبدأ</span></label>
+      </div>
+      <label class="field-label">البريد الإلكتروني—اختياري في النسخة المحلية<input id="interestEmail" type="email" placeholder="name@company.com"></label>
+      <label class="consent"><input id="foundingBenefit" type="checkbox"><span>أرغب في الحصول على أولوية وFounding Client benefit عند إطلاق الـpilot.</span></label>
+      <button class="primary-button full-button" id="interestSubmit">تسجيل الاهتمام</button>
+      <div class="success-message" id="interestSuccess" hidden>تم تسجيل اختيارك داخل التجربة. لن يتم إرسال أي بيانات في النسخة المحلية.</div>
+    </div>
+  </aside>
+
+  <aside class="modal" id="privacyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-card">
+      <button class="modal-close" data-close="privacyModal" aria-label="Close">×</button>
+      <div class="eyebrow">PRIVACY BY CHOICE</div>
+      <h2 id="privacyTitle">بياناتك تحت سيطرتك</h2>
+      <p>النسخة الحالية لا ترسل إجاباتك إلى server. كل الإجابات والـevents محفوظة فقط في متصفحك باستخدام localStorage.</p>
+      <ul><li>تقدر تستخدم شركة افتراضية بالكامل.</li><li>لا نطلب اسم الشركة.</li><li>تقدر تصدّر بيانات التجربة بنفسك.</li><li>تقدر تمسح كل البيانات فورًا.</li></ul>
+      <button class="danger-button full-button" id="eraseData">مسح كل بيانات التجربة</button>
+    </div>
+  </aside>
+
+  <footer><b>The Strategy Room</b><span>Zero-cost validation prototype · No paid AI · No sensitive data required</span></footer>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
